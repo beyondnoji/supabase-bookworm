@@ -12,6 +12,7 @@ const AddBook = ( {book, books, setBook, createBook}) => {
             createBook() 
         }}>
         <input
+            type='text'
             required
             ref={inputRef}
             placeholder='Name'
@@ -19,6 +20,7 @@ const AddBook = ( {book, books, setBook, createBook}) => {
             onChange={e => setBook({...book, name: e.target.value})}
         /> 
         <input
+            type='text'
             required
             ref={inputRef}
             placeholder='Author'
@@ -26,6 +28,7 @@ const AddBook = ( {book, books, setBook, createBook}) => {
             onChange={e => setBook({...book, author: e.target.value})}
         /> 
         <input
+            type='text'
             required
             ref={inputRef}
             placeholder='Year'
