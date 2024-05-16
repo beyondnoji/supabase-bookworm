@@ -37,7 +37,8 @@ function App() {
     const { data, error } = await supabase 
       .from('books') 
       .select()
-      .order('read', 'author', 'name', 'year', 'id') // select all 
+      .order('read', {ascending: true}, 
+      'author', 'name', 'year', {ascending: false}, 'id') // select all 
       if (error) setFetchError(error)
     setBooks(data) // set books state to queried list
     return error; 

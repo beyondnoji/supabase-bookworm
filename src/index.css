@@ -112,7 +112,7 @@ ul li::before {
 }
 
 .book svg:focus, 
-.book svg:hover {
+.item svg:hover {
   color: red;
   outline: none;
 }
