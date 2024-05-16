@@ -98,7 +98,7 @@ function App() {
       />
       <main>
       {isLoading && <p>Loading books. . .</p>}
-      {fetchError && <p style={{ color: "red" }}>{`Error: Please reload the page`}</p>}
+      {fetchError && <p style={{ color: "red" }}>{`That book was already there! Refresh the page to return to the list`}</p>}
         {!fetchError && !isLoading &&
         <Content
           books={books.filter(
