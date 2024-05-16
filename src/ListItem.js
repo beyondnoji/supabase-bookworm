@@ -3,7 +3,7 @@ import { FaTrashAlt } from 'react-icons/fa';
 
 const ListItem = ( {book, deleteBook, updateCheck} ) => {
   return (
-    <li className='book' key={book.name}>
+    <li  className='book' key={book.name}>
         <input
             type='checkbox'
             onChange={() => updateCheck(book.read, book.id)}
@@ -20,7 +20,7 @@ const ListItem = ( {book, deleteBook, updateCheck} ) => {
             onClick={ () => deleteBook(book.id)}
             role='button'
             tabIndex='0' 
-            aria-label={`Delete ${book.id}`}
+            aria-label={`Delete ${book.name}`}
         />
 
     </li>

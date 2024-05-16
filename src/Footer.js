@@ -9,8 +9,4 @@ const Footer = ({count, readCount}) => {
   )
 }
 
-Footer.defaultProps = 
-{
-  count: 0
-}
 export default Footer
